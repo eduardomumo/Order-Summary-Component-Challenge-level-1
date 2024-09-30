@@ -1,0 +1,161 @@
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+/* center container and background */
+body{
+    font-family: "Red Hat Display", sans-serif;
+    background: var(--Pale-blue);
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 4.438rem 1.5rem
+}
+
+/* main component style */
+.order-component{
+    background: white;
+    max-width: 20.428rem;
+    text-align: center;
+    border-radius: 1.25rem;
+}
+
+.img-header{
+    width: 100%;
+    border-radius: 1.25rem 1.25rem 0 0;
+}
+
+.information-component{
+    padding: 0 1.5rem;
+}
+
+
+h1{
+    font-size: 1.375rem;
+    font-weight: 900;
+    margin: 2rem 0 1rem;
+}
+
+.text-information{
+    color: var(--Desaturated-blue);
+    padding: 0 0.5rem 1.5rem;
+    font-size: 0.938rem;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.plan-price-container{
+    background: #f7f9ff;
+    border-radius: 0.688rem;
+    height: 5.063rem;
+    max-width: 17.438rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.img-icon-music{
+    max-width: 3rem;
+    max-height: 3rem;
+}
+
+.anual-plan{
+    font-size: 0.875rem;
+    font-weight: 900;
+}
+
+.anual-price{
+    color: var(--Desaturated-blue);
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.price-plan-change{
+    color: var(--Bright-blue);
+    font-size: 0.813rem;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.price-plan-change:hover{
+    color: #766cf1;
+    text-decoration: none;
+}
+
+button{
+    background: var(--Bright-blue);
+    color: white;
+    border: none;
+    border-radius: 11px;
+    max-width: 345px;
+    height: 50px;
+    width: 100%;
+    font-size: 0.938rem;
+    font-weight: 900;
+    box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
+}
+
+button:hover{
+    background: #766cf1;
+}
+
+.cancel-plan{
+    padding-top: 1.5rem;
+    color: var(--Desaturated-blue);
+    font-size: 0.938rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+
+@media (width > 1024px) {
+    
+    html{
+        font-size: 20px;
+    }
+
+    body{
+        background-image: url(images/pattern-background-desktop.svg);
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+
+    .order-component{
+        max-width: 22.5rem;
+    }
+
+    .plan-price-container{
+        margin-left: 1rem;
+    }
+
+    button{
+        max-width: 17.7rem;
+    }
+}
